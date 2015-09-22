@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -10,7 +9,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>error-stack-parser</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.3</version>
     <packaging>jar</packaging>
 
     <name>error-stack-parser</name>
@@ -56,7 +55,7 @@
         <url>http://github.com/webjars/error-stack-parser</url>
         <connection>scm:git:https://github.com/webjars/error-stack-parser.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/error-stack-parser.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>error-stack-parser-1.2.3</tag>
     </scm>
 
     <dependencies>
@@ -82,7 +81,7 @@
                         <configuration>
                             <target>
                                 <echo message="download archive" />
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
                                 <echo message="unzip archive" />
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
